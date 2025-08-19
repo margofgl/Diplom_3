@@ -11,7 +11,6 @@ import static io.restassured.RestAssured.given;
 public class UserClient {
 
     public UserClient(String baseUrl) {
-        // у сайта API на /api
         RestAssured.baseURI = baseUrl.endsWith("/") ? baseUrl + "api" : baseUrl + "/api";
     }
 
